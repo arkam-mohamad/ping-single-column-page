@@ -1,0 +1,97 @@
+*{
+  font-family: 'Libre Franklin', sans-serif;
+}
+main{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  gap: 10px;
+}
+h1{
+  font-size: 40px;
+  color: hsl(209, 33%, 12%);
+  margin-bottom: 0;
+}
+h1 span{
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+h2{
+  font-size: 20px;
+  font-weight: 300;
+  color: hsl(209, 33%, 12%);
+  margin-top: 5px;
+}
+.email{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+  justify-content: space-between;
+  width: 90%;
+}
+input{
+  border: 1px solid hsl(0, 0%, 79%);
+  outline: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+button{
+  background-color: hsl(223, 87%, 63%);
+  border: 0;
+  border-radius: 50px;
+  color: white;
+}
+button:hover{
+  background-color: hsl(223, 100%, 88%);
+  cursor: pointer;
+}
+.error{
+  position: absolute;
+  top: 30px;
+  font-size: 13px;
+  left: 20px;
+  color: hsl(354, 100%, 66%);
+  visibility: hidden;
+}
+.hidden .error{
+  visibility: visible;
+}
+.hidden input{
+  border-color: hsl(354, 100%, 66%);
+}
+.illustration{
+  margin-top: 20px;
+  width: 90%;
+}
+.social img{
+  width: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  margin: 5px;
+  border-radius: 50%;
+}
+.social img:hover{
+  cursor: pointer;
+}
+small{
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+
+
+@media screen and (max-width:450px) {
+  main{
+    margin-top: 20px;
+  }
+  .email{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+  }
+  h1{
+    text-align: center;
+  }
+}
