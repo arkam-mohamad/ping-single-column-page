@@ -1,0 +1,1 @@
+# ping-single-column-page
